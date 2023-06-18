@@ -1,0 +1,344 @@
+@charset "UTF-8";
+
+/*
+html5doctor.com Reset Stylesheet
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+
+/* ここまでリセットCSS */
+
+
+
+
+body {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.container {
+    max-width: 1150px;
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    font-size: 14px;
+}
+
+.main {
+    flex: 1 1 73%;
+    order: 2;
+    padding: 15px;
+}
+.sidebar {
+    flex: 1 1 25%;
+    order: 1;
+    padding: 15px;
+}
+
+.main h2 {
+    height: 36px;
+    line-height: 36px;
+    background: no-repeat url("image/mark1.png") left 9px center #000;
+    color: #FFFFFF;
+    padding-left: 35px;
+    margin: 15px 0;
+}
+
+.main h3 {
+    height: 35px;
+    line-height: 35px;
+    background: linear-gradient(#FFFFFF, #ebebeb);
+    padding-left: 15px;
+    margin: 15px 0;
+    border: solid 1px #ccc;
+}
+
+.main h4 {
+    padding-left: 15px;
+    margin: 15px 0;
+}
+
+.main p {
+    line-height: 28px;
+    padding: 0 15px;
+    margin: 15px 0;
+}
+
+.main a {
+    color: #333;
+}
+
+.topic {
+    height: 140px;
+    overflow-y: scroll;
+    padding-left: 15px;
+    margin-bottom: 100px;
+}
+
+.topic dt {
+    border-bottom: 1px solid #ccc;
+    height: 28px;
+    line-height: 28px;
+    font-weight: bold;
+    display: inline-block;
+    box-sizing: border-box;
+    min-width: 100px;
+    width: 14%;
+}
+
+.topic dd {
+    border-bottom: 1px solid #ccc;
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 86%;
+}
+
+.topic span {
+    background-color: red;
+    color: white;
+    font-size: 8px;
+    padding: 0 3px;
+    margin-left: 3px;
+    border-radius: 2px;
+}
+
+.sidebar .box1 {
+    background: #e4e4e4;
+    border: solid 1px #d1d1d1;
+    padding: 15px;
+    margin: 15px;
+}
+
+.sidebar .non-box {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.sidebar h2 {
+    padding-left: 10px;
+    margin-bottom: 15px;
+    border-left: 3px solid black;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.sidebar ul li a {
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 5px;
+    color: #000;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover{
+    background-color: #000;
+    color: #FFFFFF;
+    transition: 1s;
+}
+
+.sidebar p {
+    line-height: 28px;
+}
+
+.footer {
+    background-color: black;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer p {
+    line-height: 30px;
+}
+
+.footer p  a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer p  a:hover{
+    color: #000;
+    transition: 0.5s;
+}
+
+
+
+
+/* 今回、メディアクエリの実装は省きます */
