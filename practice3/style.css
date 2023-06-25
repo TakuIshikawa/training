@@ -1,0 +1,304 @@
+@charset "UTF-8";
+
+body {
+
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    color: #54514c;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    height: 80px;
+}
+
+header img {
+    width: 250px;
+    padding: 25px;
+}
+
+header ul {
+    float: right;
+}
+
+header li {
+    display: inline-block;
+}
+
+header li a {
+    color: #9c9b98;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    padding: 10px 0;
+    margin: 25px 0;
+}
+
+header li a:hover {
+    color: #FFF;
+    background-color: #b99566;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.top-bg img {
+    display: block;
+    margin: 80px auto 0 auto;
+    max-width: 1500px;
+    width: 100%;
+    height: 100%;
+}
+
+main .container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+main h2 {
+    background-color: #b99566;
+    padding: 10px 20px;
+    margin-top: 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+main ul.information {
+    margin-bottom: 50px;
+}
+
+main .information li {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .information li:nth-child(even) {
+    background-color: #f5f3f0;
+}
+
+main .information li p:nth-child(1) {
+    padding: 10px;
+    font-size: 14px;
+    flex: 0 0 70px;
+}
+
+main .information li p:nth-child(2) {
+    padding: 10px;
+    font-size: 14px;
+    flex: 1 1 auto;
+}
+
+main .information .tryangle {
+    display: inline-block;
+    width:0;
+    height: 0;
+    border-left: 9px solid #54514c;
+    border-right: 10px solid transparent;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    margin-left:3px;
+}
+
+.gourmet-img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gourmet-img article {
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.gourmet-img article:nth-child(odd) {
+    padding: 10px 5px 10px 0;
+}
+
+.gourmet-img article:nth-child(even) {
+    padding: 10px 0 10px 5px;
+}
+
+.gourmet-img img {
+    width: 100%;
+}
+
+.gourmet-img .lineleft {
+    border-left: 4px solid #000;
+    margin: 10px 0;
+}
+
+.gourmet-img h3 {
+    font-size: 20px;
+    padding: 5px 0 5px 10px;
+}
+
+.gourmet-img ul {
+    list-style: none;
+    display: flex;
+    padding: 5px 0 5px 10px;
+}
+
+.gourmet-img li {
+    background-color: #b99566;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.gourmet-img p:before {
+    content: "-";
+    margin: 0 10px;
+}
+
+nav {
+    background-color: #54514c;
+}
+
+nav ul {
+    display: flex;
+    margin: 80px auto 0 auto;
+    max-width: 700px;
+    justify-content: space-between;
+}
+
+nav li {
+    border: 1px solid #FFF;
+    margin: 20px 0 20px 0;
+    color: #FFF;
+    border-radius: 3px;
+}
+
+nav li a {
+    color: #FFF;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    padding: 8px 0;
+}
+
+nav li a:hover {
+    color: #54514c;
+    background-color: #FFF;
+    transition: 0.5s;
+}
+
+footer {
+    text-align: center;
+}
+
+footer img {
+    width: 200px;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 12px;
+    padding: 0 0 10px 0;
+
+}
+
+@media (max-width:999px) {
+
+    .gourmet-img article:nth-child(odd) {
+        padding-left: 10px;
+    }
+
+    .gourmet-img article:nth-child(even) {
+        padding-right: 10px;
+    }
+}
+
+@media (max-width:767px) {
+
+    .header {
+        height: 60px;
+    }
+
+    header img {
+        width: 200px;
+        padding: 20px;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    .top-bg img {
+        margin-top: 60px;
+    }
+
+    main h2 {
+        margin-top: 0;
+    }
+
+    main ul.information {
+        margin-bottom: 0;
+    }
+
+    main .information li {
+        flex-direction: column;
+    }
+
+    main .information li p:nth-child(1) {
+        padding-bottom: 0px;
+        font-size: 12px;
+        flex: 0 0 auto;
+    }
+
+    main .information li p:nth-child(2) {
+        font-size: 13px;
+        flex: 0 0 auto;
+    }
+    main .information .tryangle {
+        border-right-width: 5px;
+    }
+
+    .gourmet-img article {
+        width: 100%;
+        padding: 10px !important;
+    }
+
+    .gourmet-img h3 {
+        font-size: 16px;
+    }
+
+    .gourmet-img li {
+        font-size: 7px;
+    }
+
+    .gourmet-img p {
+        font-size: 14px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 30px;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+
+    nav li a {
+        width: 300px;
+        padding: 8px 0;
+        font-size: 15px;
+    }
+
+    footer img {
+        width: 160px;
+        padding: 20px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+}
