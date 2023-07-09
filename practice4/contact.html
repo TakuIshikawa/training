@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="favicon" href="">
+    <title>contact</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <img src="image/works_bg.jpg">
+            <header>
+                <a href="#">Cresta Design</a>
+                <nav>
+                    <ul>
+                        <li><a href="#">Concept</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <h1>Contact</h1>
+            <p class="backscript">Contact us</p>
+        </div><!-- #top -->
+
+        <main>
+            <form action="index.html" method="post">
+                <label>お問い合わせ内容</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="requireDoc" name="requireDoc">
+                        <label for="requireDoc">資料請求</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="requireTel" name="requireTel">
+                        <label for="requireTel">お電話でのご相談を希望</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="apply" name="apply">
+                        <label for="apply">申し込み</label>
+                    </li>
+                </ul>
+                <label for="name">担当者名</label>
+                <input type="text" id="name" name="name">
+                <label for="tel">電話番号</label>
+                <input type="tel" id="tel" name="tel">
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email">
+                <label for="etc">その他</label>
+                <textarea id="etc" name="etc" rows="12"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+        <footer>
+            <p><small>©cresta.design all rights reserved</small></p>
+        </footer>
+    </div><!-- #container -->
+</body>
+
+</html>
