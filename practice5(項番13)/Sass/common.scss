@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Noto sans jp', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    color: #333333;
+}
+
+header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 94px;
+    box-shadow: 0 0px 10px 0px gray;
+    background-color: #FFFFFF;
+    z-index: 1000;
+
+    .menuSP {
+        display: none;
+
+        .menuSPBar {
+            padding: 10px 5px;
+            width: 40px;
+            margin: 0 0 0 auto;
+
+            span {
+                display: block;
+                border-top: solid 3px rgba(0, 0, 0, 0.7);
+                width: 40px;
+            }
+
+            span+span {
+                margin-top: 10px;
+            }
+        }
+
+        .menuSPBar.menuSP-open span:nth-child(1) {
+            border-color: #FFFFFF;
+            position: relative;
+            top: 13px;
+            animation: firstRotate 1s ease-in-out forwards;
+        }
+
+        @keyframes firstRotate {
+            100% {
+                transform: rotate(45deg);
+            }
+        }
+
+        .menuSPBar.menuSP-open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menuSPBar.menuSP-open span:nth-child(3) {
+            border-color: #FFFFFF;
+            position: relative;
+            bottom: 13px;
+            animation: secondRotate 1s ease-in-out forwards;
+        }
+
+        @keyframes secondRotate {
+            100% {
+                transform: rotate(-45deg);
+            }
+        }
+
+        .menuSPBar:hover {
+            transition: 0.3s;
+            opacity: 0.3;
+        }
+
+        .menuSPList {
+            display: none;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            padding: 100px 0;
+
+            p,
+            a {
+                display: block;
+                color: #ffffff;
+                font-size: 28px;
+                font-weight: bold;
+                padding: 50px 0;
+                width: 200px;
+                margin: 0px auto;
+            }
+
+            p {
+                font-size: 50px;
+            }
+        }
+
+        .menuSPList.menuSP-open {
+            display: block;
+        }
+    }
+
+    .wrapper-header {
+        max-width: 1022px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+
+        .logo {
+            display: flex;
+            align-items: center;
+
+            a {
+                display: flex;
+                align-items: center;
+
+                img {
+                    height: 47px;
+                    width: auto;
+                }
+
+                p {
+                    height: 47px;
+                    line-height: 47px;
+                    font-weight: bold;
+                    font-size: 20px;
+                    padding-left: 10px;
+                }
+            }
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+
+            li {
+                font-weight: bold;
+                ;
+            }
+
+            li+li {
+                padding-left: 46px;
+            }
+        }
+    }
+}
+
+.header-fixed {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0;
+    animation: slideDown 1s ease-in-out forwards;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translatey(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+header.menuSP-open {
+    left: 20px;
+    background-color: rgba(#333333, $alpha: 0.9);
+    animation: showGradually 0.5s ease-in-out forwards;
+}
+
+@keyframes showGradually {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    height: 244px;
+    text-align: center;
+
+    .footerCopy {
+        padding: 43px 0 35px;
+        font-size: 24px;
+    }
+
+    .footerLink {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .footerLink+.footerLink {
+        margin-left: 20px;
+    }
+
+    small {
+        display: block;
+        padding-top: 60px;
+        font-size: 14px;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:hover {
+    transition: 0.3s;
+    opacity: 0.5;
+}
+
+a.buttonFaq {
+    display: inline-block;
+    width: 155px;
+    height: 37px;
+    line-height: 37px;
+    background: linear-gradient(to right, #FA41CC, #6020B0);
+    border-radius: 10px;
+    text-align: center;
+    color: #FFF;
+}
+
+
+@media (max-width:768px) {
+
+    header {
+        height: auto;
+        width: auto;
+        position: fixed;
+        top: 20px;
+        left: auto;
+        right: 20px;
+        box-shadow: none;
+        border-radius: 5px;
+        background-color: rgba(155, 155, 155, 0.2);
+
+        .menuSP {
+            display: block;
+        }
+
+        .wrapper-header {
+            display: none;
+        }
+    }
+}

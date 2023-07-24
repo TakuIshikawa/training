@@ -1,0 +1,400 @@
+@charset "UTF-8";
+main .wrapper-firstView,
+main .wrapper-features,
+main .wrapper-price,
+main .wrapper-faq,
+main .wrapper-contact {
+  max-width: 1022px;
+  margin: 0 auto;
+  padding: 55px 20px;
+}
+main .wrapper-blog,
+main .wrapper-works {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 55px 20px;
+}
+main .firstView {
+  overflow: hidden;
+  margin-top: 94px;
+}
+main .firstView .wrapper-firstView {
+  position: relative;
+  margin: auto;
+  background: url("../image/manager.png") no-repeat right 20px bottom;
+  margin-bottom: 50px;
+}
+main .firstView .wrapper-firstView .imgCercle {
+  position: absolute;
+  z-index: -100;
+  bottom: 0px;
+  right: -230px;
+}
+main .firstView .wrapper-firstView .mainCopy {
+  line-height: 46px;
+  font-size: 32px;
+  padding-top: 109px;
+}
+main .firstView .wrapper-firstView .subCopy {
+  line-height: 24px;
+  font-size: 16px;
+  padding: 44px 0 45px;
+  font-weight: bold;
+}
+main .features .wrapper-features .wrapper-featureIntroduction {
+  padding: 50px 0;
+}
+main .features .wrapper-features .wrapper-featureIntroduction .featureTitle {
+  height: 40px;
+  line-height: 40px;
+  font-size: 28px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+main .features .wrapper-features .wrapper-featureIntroduction .featureFlexBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .features .wrapper-features .wrapper-featureIntroduction .featureFlexBox img {
+  max-width: 400px;
+  flex: 1 1 auto;
+  width: 30%;
+}
+main .features .wrapper-features .wrapper-featureIntroduction .featureFlexBox .featureTopic {
+  width: 502px;
+  flex: 0 0 auto;
+}
+main .features .wrapper-features .wrapper-featureIntroduction .featureFlexBox .featureTopic .featureHeadline {
+  line-height: 42px;
+  font-size: 24px;
+  padding: 20px 0 40px 0;
+}
+main .features .wrapper-features .wrapper-featureIntroduction .featureFlexBox .featureTopic .featureDetail {
+  line-height: 25px;
+  font-size: 16px;
+  padding-bottom: 50px;
+  font-weight: bold;
+}
+main .features .wrapper-features .wrapper-featureIntroduction:nth-child(even) .featureFlexBox {
+  justify-content: space-around;
+}
+main .features .wrapper-features .wrapper-featureIntroduction:nth-child(even) .featureFlexBox img {
+  order: 2;
+}
+main .features .wrapper-features .wrapper-featureIntroduction:nth-child(even) .featureFlexBox .featureTopic {
+  order: 1;
+}
+main .price {
+  background-color: #EEFBFB;
+}
+main .price .wrapper-price {
+  max-width: 926px;
+}
+main .price .wrapper-price .tablePrice {
+  width: 100%;
+  margin-top: 50px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1607843137);
+}
+main .price .wrapper-price .tablePrice tr td {
+  border: solid 1px rgba(155, 148, 148, 0.1);
+  background-color: #FFFFFF;
+  height: 100px;
+  line-height: 100px;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 19px;
+}
+main .price .wrapper-price .tablePrice tr td:nth-child(1) {
+  width: 275px;
+}
+main .price .wrapper-price .priceNote {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444444;
+  text-align: center;
+  padding-top: 35px;
+}
+main .price .wrapper-price .priceNote::before {
+  content: "＊";
+}
+main .faq .wrapper-faq .wrapper-faqList {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 23px;
+  padding: 0 50px;
+}
+main .faq .wrapper-faq .wrapper-faqList .faqQuastion {
+  border: solid 1px #E5E5E5;
+  background: #FFFFFF;
+  padding: 20px 35px;
+}
+main .faq .wrapper-faq .wrapper-faqList .faqAnser {
+  border: solid 1px #E5E5E5;
+  background: #F2F2F2;
+  padding: 20px 35px;
+  text-align: left;
+}
+main .faq .wrapper-faq .sectionTitle_en + .wrapper-faqList {
+  padding-top: 32px;
+}
+main .blog {
+  background: #EEFBFB;
+}
+main .blog .wrapper-blog {
+  max-width: 1226px;
+}
+main .blog .wrapper-blog .wrapper-blogList {
+  display: flex;
+  justify-content: center;
+  padding: 55px 0;
+}
+main .blog .wrapper-blog .wrapper-blogList .blogArticle {
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  margin: 0 15px;
+  flex: 1 1;
+}
+main .blog .wrapper-blog .wrapper-blogList .blogArticle .blogArticleImage {
+  width: 100%;
+}
+main .blog .wrapper-blog .wrapper-blogList .blogArticle .blogArticleDescription {
+  padding: 20px 20px 35px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+main .blog .wrapper-blog .wrapper-blogList .blogArticle .blogArticleTime {
+  position: absolute;
+  font-size: 16px;
+  font-weight: bold;
+  bottom: 10px;
+  right: 32px;
+}
+main .works .wrapper-works .wrapper-worksList {
+  display: flex;
+  justify-content: center;
+  padding: 55px 0;
+  overflow: hidden;
+}
+main .works .wrapper-works .wrapper-worksList .workArticle {
+  width: 322px;
+  border: 1px solid #DDDDDD;
+  border-radius: 8px;
+  margin: 0 25px;
+}
+main .works .wrapper-works .wrapper-worksList .workArticle .workArticleDescription {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px 20px 30px;
+  line-height: 24px;
+}
+main .works .wrapper-works .wrapper-worksList .workArticle .workArticleDetail {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 20px 40px 20px;
+  line-height: 20px;
+}
+main .contact {
+  background: linear-gradient(to right, #05A5FA 0%, #63FBD7 100%);
+}
+main .contact .wrapper-contact {
+  color: #FFFFFF;
+}
+main .contact .wrapper-contact .sectionTitle_en {
+  color: #FFFFFF;
+}
+main .contact .wrapper-contact .messageContact {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 35px 0;
+}
+main .contact .wrapper-contact .contactForm {
+  color: #333333;
+  background-color: #FFFFFF;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 35px 60px;
+}
+main .contact .wrapper-contact .contactForm label {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+main .contact .wrapper-contact .contactForm label::after {
+  content: "必須";
+  font-size: 14px;
+  line-height: 26px;
+  color: #FFFFFF;
+  background-color: #0C449B;
+  border-radius: 10px;
+  padding: 5px 15px;
+  margin-left: 25px;
+}
+main .contact .wrapper-contact .contactForm input {
+  max-width: 500px;
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  background: #EEFBFB;
+  border-radius: 3px;
+  border: none;
+}
+main .contact .wrapper-contact .contactForm textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: #EEFBFB;
+  border-radius: 3px;
+  border: none;
+}
+main .contact .wrapper-contact .contactForm .agreePrivacy {
+  align-self: center;
+  padding: 30px;
+}
+main .contact .wrapper-contact .contactForm .agreePrivacy input,
+main .contact .wrapper-contact .contactForm .agreePrivacy label {
+  padding: 0;
+  margin: 0;
+}
+main .contact .wrapper-contact .contactForm .agreePrivacy input {
+  color: #707070;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+main .contact .wrapper-contact .contactForm .agreePrivacy label {
+  display: inline;
+  vertical-align: middle;
+}
+main .contact .wrapper-contact .contactForm .agreePrivacy label::after {
+  display: none;
+}
+main .contact .wrapper-contact .contactForm input[type=submit] {
+  align-self: center;
+  width: 155px;
+  height: 35px;
+  background: linear-gradient(to right, #FA41CC, #6020B0);
+  border-radius: 10px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.sectionTitle {
+  height: 46px;
+  line-height: 46px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.sectionTitle_en {
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  padding-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #3BA6C9;
+}
+
+@media (max-width: 768px) {
+  main .firstView {
+    margin-top: 0px;
+  }
+  main .firstView .wrapper-firstView {
+    background-size: 60%;
+    background-position: right center;
+    margin: 0;
+  }
+  main .firstView .wrapper-firstView .mainCopy {
+    font-size: 40px;
+    padding-top: 0;
+  }
+  main .firstView .wrapper-firstView .subCopy {
+    font-size: 24px;
+    padding: 14px 10px 15px;
+    margin: 30px 0 30px;
+    max-width: 400px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  main .firstView .wrapper-firstView .buttonFaq {
+    display: block;
+    font-size: 24px;
+    padding: 5px 20px;
+    margin: 0 auto;
+  }
+  main .features .wrapper-features .wrapper-featureIntroduction .featureTitle {
+    padding-bottom: 20px;
+    font-size: 36px;
+  }
+  main .features .wrapper-features .wrapper-featureIntroduction .featureFlexBox {
+    flex-direction: column;
+  }
+  main .features .wrapper-features .wrapper-featureIntroduction .featureFlexBox img {
+    width: 60%;
+  }
+  main .features .wrapper-features .wrapper-featureIntroduction .featureFlexBox .featureTopic {
+    width: auto;
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  main .features .wrapper-features .wrapper-featureIntroduction .featureFlexBox .featureTopic .featureHeadline {
+    font-size: 24px;
+  }
+  main .features .wrapper-features .wrapper-featureIntroduction .featureFlexBox .featureTopic .featureDetail {
+    font-size: 20px;
+    padding-bottom: 0;
+  }
+  main .features .wrapper-features .wrapper-featureIntroduction:nth-child(even) .featureFlexBox img {
+    order: 1;
+  }
+  main .features .wrapper-features .wrapper-featureIntroduction:nth-child(even) .featureFlexBox .featureTopic {
+    order: 2;
+  }
+  main .features .wrapper-features .wrapper-featureIntroduction:last-child {
+    padding-bottom: 0;
+  }
+  main .price .wrapper-price .tablePrice tr td {
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    padding: 25px 19px;
+  }
+  main .price .wrapper-price .tablePrice tr td:nth-child(1) {
+    width: 300px;
+  }
+  main .price .wrapper-price .priceNote {
+    font-size: 20px;
+    padding-top: 35px;
+  }
+  main .faq .wrapper-faq .wrapper-faqList {
+    line-height: 27px;
+    font-size: 20px;
+    padding: 0;
+  }
+  main .blog .wrapper-blog .wrapper-blogList {
+    flex-direction: column;
+    padding: 32px 0 0;
+  }
+  main .blog .wrapper-blog .wrapper-blogList .blogArticle {
+    margin: 0 30px;
+  }
+  main .blog .wrapper-blog .wrapper-blogList .blogArticle + .blogArticle {
+    margin-top: 30px;
+  }
+  .sectionTitle {
+    height: auto;
+    font-size: 40px;
+  }
+  .sectionTitle_en {
+    font-size: 24px;
+  }
+}/*# sourceMappingURL=main.css.map */
