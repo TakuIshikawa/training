@@ -297,7 +297,7 @@ main .contact .wrapper-contact .contactForm input[type=submit] {
   color: #FFFFFF;
   margin: 0;
 }
-main .contact .wrapper-contact .contactForm input[type=submit].disable {
+main .contact .wrapper-contact .contactForm input[type=submit].disabled {
   background: #707070;
 }
 

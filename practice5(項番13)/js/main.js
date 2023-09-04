@@ -58,11 +58,11 @@ const contactForm = document.querySelector('#contactForm');
 contactForm.addEventListener('click', () => {
   if (YourName.value !== "" && email.value !== "" && contactDetail.value !== "" && agreePrivacy.checked === true) {
     submit.disabled = false;
-    submit.classList.remove('disable');
+    submit.classList.remove('disabled');
 
   } else {
     submit.disabled = true;
-    submit.classList.add('disable');
+    submit.classList.add('disabled');
 
   }
 });
