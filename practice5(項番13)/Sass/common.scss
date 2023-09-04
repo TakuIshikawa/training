@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    
+
     position: absolute;
     top: 0px;
     left: 0px;
@@ -55,7 +55,7 @@ header {
         .menuSPBar.menuSP-open span:nth-child(3) {
             border-color: #FFFFFF;
             position: relative;
-            bottom: 13px;
+            bottom: 12px;
             animation: secondRotate 1s ease-in-out forwards;
         }
 

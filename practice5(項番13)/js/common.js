@@ -27,27 +27,43 @@ const openMenu = () => {
     menuSPList.classList.toggle('menuSP-open');
 };
 
-menuSP.addEventListener('click' ,openMenu);
+menuSP.addEventListener('click', openMenu);
 
 
+// ボタンのスムーススクロール
+//querySelectorAllメソッドを使用してページ内のhref属性が#で始まるものを選択
+//forEachメソッドを使って、各アンカータグにクリックされた時の処理
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
 
-//メニューボタン着地位置調整
-const menuButtonToFeatures = document.querySelector('#menuButtonToFeatures');
-const menuButtonToPrice = document.querySelector('#menuButtonToPrice');
-const menuButtonToContact = document.querySelector('#menuButtonToContact');
-const menuButtonToContactEnf = document.querySelector('#menuButtonToContactEnf');
+        // PCの場合、headerの高さを取得し、headerHeightに代入
+        // SPの場合、headerなしのため、headerHeightに0を代入
+        const windowInnerWidth = window.innerWidth;
+        let headerHeight = 0;
+        if (windowInnerWidth >= 768) {
+            headerHeight = document.querySelector('header').offsetHeight;
+        } else {
+            headerHeight = 0;
+        };
 
-const scrollmenu = () => {
-    setTimeout( () => {
-        scrollBy(0, -94);}
-      , 0);
-};
+        // クリックされたときのデフォルトの挙動を防ぐ
+        e.preventDefault();
 
-menuButtonToFeatures.addEventListener('click' ,scrollmenu);
-menuButtonToPrice.addEventListener('click' ,scrollmenu);
-menuButtonToContact.addEventListener('click' ,scrollmenu);
-menuButtonToContactEnf.addEventListener('click' ,scrollmenu);
+        // クリックされたアンカータグのhref属性を取得
+        const href = anchor.getAttribute('href');
 
+        // href属性の#を取り除いた部分と一致するIDを取得
+        const target = document.getElementById(href.replace('#', ''));
 
+        //取得した要素の位置を取得するために、getBoundingClientRect()を呼び出し、ページ上の位置を計算。
+        //headerの高さを引いて、スクロール位置がヘッダーの下になるように調整します。
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
 
+        // window.scrollTo()を呼び出して、スクロール位置を設定します。behaviorオプションをsmoothに設定することで、スムーズなスクロールを実現します。
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+    });
+});
 

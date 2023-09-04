@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <script src="js/common.js" defer></script>
+    <script src="js/main.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <link rel="icon" href="image/Pink and Purple Events & party Entertainment Logo.png">
     <title>ユアコーディング</title>
 </head>
@@ -62,7 +65,7 @@
                     デザインに注力されたい方の<br>
                     助けになります
                 </p>
-                <a href="" class="buttonFaq">お問い合わせ</a>
+                <a href="#contact" class="buttonFaq">お問い合わせ</a>
             </div>
         </section> <!-- #firstView -->
 
@@ -226,42 +229,45 @@
             <div class="wrapper-works" data-aos="fade-up">
                 <h2 class="sectionTitle">制作実績</h2>
                 <p class="sectionTitle_en">WORKS</p>
-                <div class="wrapper-worksList">
-                    <article class="workArticle">
-                        <img class="workArticleImage" src="image/arnel-hasanovic-MNd-Rka1o0Q-unsplash.png" alt="ブログ画像">
-                        <p class="workArticleDescription">
-                            コーディングカンファレンスのイベントLPの制作を行いました！
-                        </p>
-                        <ul class="workArticleDetail">
-                            <li>採用技術：jQuery,WordPress</li>
-                            <li>実装機関：4週間</li>
-                            <li>担当コーダー：石井</li>
-                        </ul>
-                    </article>
+                <div class="wrapper-worksList swiper">
+                    <div class="swiper-wrapper">
+                        <article class="workArticle swiper-slide">
+                            <img class="workArticleImage" src="image/arnel-hasanovic-MNd-Rka1o0Q-unsplash.png"
+                                alt="ブログ画像">
+                            <p class="workArticleDescription">
+                                コーディングカンファレンスのイベントLPの制作を行いました！
+                            </p>
+                            <ul class="workArticleDetail">
+                                <li>採用技術：jQuery,WordPress</li>
+                                <li>実装機関：4週間</li>
+                                <li>担当コーダー：石井</li>
+                            </ul>
+                        </article>
 
-                    <article class="workArticle">
-                        <img class="workArticleImage" src="image/digital-marketing-1433427_1280.png" alt="ブログ画像">
-                        <p class="workArticleDescription">
-                            株式会社サンプル様採用サイトのコーディングを行いました！
-                        </p>
-                        <ul class="workArticleDetail">
-                            <li>採用技術：jQuery,Bootstrap4</li>
-                            <li>実装機関：2週間</li>
-                            <li>担当コーダー：石井</li>
-                        </ul>
-                    </article>
+                        <article class="workArticle swiper-slide">
+                            <img class="workArticleImage" src="image/digital-marketing-1433427_1280.png" alt="ブログ画像">
+                            <p class="workArticleDescription">
+                                株式会社サンプル様採用サイトのコーディングを行いました！
+                            </p>
+                            <ul class="workArticleDetail">
+                                <li>採用技術：jQuery,Bootstrap4</li>
+                                <li>実装機関：2週間</li>
+                                <li>担当コーダー：石井</li>
+                            </ul>
+                        </article>
 
-                    <article class="workArticle">
-                        <img class="workArticleImage" src="image/hal-gatewood-tZc3vjPCk-Q-unsplash.png" alt="ブログ画像">
-                        <p class="workArticleDescription">
-                            株式会社サンプル様通販サイトのコーディングを行いました！
-                        </p>
-                        <ul class="workArticleDetail">
-                            <li>採用技術：jQuery,Bootstrap4</li>
-                            <li>実装機関：6週間</li>
-                            <li>担当コーダー：石井</li>
-                        </ul>
-                    </article>
+                        <article class="workArticle swiper-slide">
+                            <img class="workArticleImage" src="image/hal-gatewood-tZc3vjPCk-Q-unsplash.png" alt="ブログ画像">
+                            <p class="workArticleDescription">
+                                株式会社サンプル様通販サイトのコーディングを行いました！
+                            </p>
+                            <ul class="workArticleDetail">
+                                <li>採用技術：jQuery,Bootstrap4</li>
+                                <li>実装機関：6週間</li>
+                                <li>担当コーダー：石井</li>
+                            </ul>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section> <!-- #works -->
@@ -274,7 +280,7 @@
                     コーディングの人手が足りないとき、<br>
                     あなたの力になります
                 </p>
-                <form class="contactForm">
+                <form class="contactForm" id="contactForm">
                     <label for="name">お名前</label>
                     <input type="text" id="name">
                     <label for="email">メールアドレス</label>
