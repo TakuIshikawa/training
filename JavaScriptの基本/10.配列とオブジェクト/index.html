@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配列とオブジェクト</title>
+</head>
+
+<body>
+    <script>
+        //1. 3つ以上の値を⽤意して変数に代⼊してください。その1番⽬と3番⽬をコンソールで表⽰してください。
+        let age = [25, 18, 33];
+        console.log(age[0]);
+        console.log(age[2]);
+
+        //2. key、value、プロパティーについて説明してください。
+        //  key:   オブジェクトに設定した値の名前
+        //  value: オブジェクトに設定した値
+        //  プロパティー： keyと対応するvalue
+
+        //3. 3つほどプロパティを⽤意したオブジェクトを⽤意してコンソールで表⽰してください。
+        let student = {
+            name: "一郎",
+            age: 18,
+            class: "A"
+        };
+        console.log(student.name);
+        console.log(student.age);
+        console.log(student.class);
+
+        //4. オブジェクトを3つ⽤意してそれを配列として代⼊してください。配列の0番⽬と3番⽬を表⽰させ、その中のkeyを指定してコンソールに表⽰させてください。        
+        let students = [
+            {
+                name: "一郎",
+                age: 18,
+                class: "A"
+            },
+            {
+                name: "二郎",
+                age: 18,
+                class: "C"
+            },
+            {
+                name: "三郎",
+                age: 15,
+                class: "F"
+            }
+        ];
+        console.log(students[0].name);
+        console.log(students[0].age);
+        console.log(students[0].class);
+        console.log(students[2].name);
+        console.log(students[2].age);
+        console.log(students[2].class);
+
+    </script>
+</body>
+
+</html>

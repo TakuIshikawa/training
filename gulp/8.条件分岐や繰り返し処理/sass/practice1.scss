@@ -1,0 +1,21 @@
+//1. ifの処理を@mixinの中で⾏い、対象のクラスの中で展開し、ifの条件で通ったCSSのプロパティーを反映させてください
+@mixin color() {
+    $value : 'red';
+
+    @if $value =='red' {
+        background-color: red;
+    }
+
+    @else {
+        background-color: blue;
+    }
+}
+;
+
+
+.block-red {
+    @include color();
+    height: 100px;
+    width: 100px;
+
+};

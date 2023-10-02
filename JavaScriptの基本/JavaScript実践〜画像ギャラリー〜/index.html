@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript実践クイズ〜画像ギャラリー編〜</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>画像ギャラリーをつくろう</h1>
+        <div id="myGallery" class="gallery">
+            <ol class="gallery-images">
+                <li id="img1" class="gallery-image-item active">
+                    <img src="https://source.unsplash.com/PGHIP0o15Hk/900x450" alt="">
+                </li>
+                <li id="img2" class="gallery-image-item">
+                    <img src="https://source.unsplash.com/NodtnCsLdTE/900x450" alt="">
+                </li>
+                <li id="img3" class="gallery-image-item">
+                    <img src="https://source.unsplash.com/1ejZ2XBjJgU/900x450" alt="">
+                </li>
+            </ol>
+            <ol class="gallery-thumbnails">
+                <li class="gallery-thumbnail-item" data-gallery-image="img1">
+                    <img src="https://source.unsplash.com/PGHIP0o15Hk/256x144" alt="">
+                </li>
+                <li class="gallery-thumbnail-item" data-gallery-image="img2">
+                    <img src="https://source.unsplash.com/NodtnCsLdTE/256x144" alt="">
+                </li>
+                <li class="gallery-thumbnail-item" data-gallery-image="img3">
+                    <img src="https://source.unsplash.com/1ejZ2XBjJgU/256x144" alt="">
+                </li>
+            </ol>
+        </div>
+        <p>Images from <a href="https://unsplash.com">Unsplash</a>.</p>
+    </div>
+</body>
+
+</html>

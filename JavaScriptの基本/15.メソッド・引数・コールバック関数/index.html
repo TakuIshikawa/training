@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メソッド・引数・コールバック関数</title>
+</head>
+
+<body>
+    <script>
+        //1. プロパティーとメソッドの違いをまとめて3つほどメソッドを作ってください。
+        //　　・オブジェクトのkeyとvalueにおいて、
+        //　　　valueに値が設定されているものがプロパティー、関数となっているものがメソッド。
+
+        //2. 下記の関数を実⾏してその結果をコンソールに表⽰してください。（スコープ内に書く⽅法はだめです。）
+        function fruit(name, price) {
+            const result = name + "の値段は" + price + "円です。"
+            return result
+        };
+
+        console.log(fruit("リンゴ", 150));
+
+        //3. 下記の関数を経由して2つの関数を実⾏するような処理を作ってください。
+        function addTax(name, price, func) {
+            // priceは値段
+            // funcは実⾏する関数名
+            // 税込み価格を計算して四捨五⼊して整数にしている(スコープ内でしか参照できません。)
+            const taxPrice = Math.round(price * 1.10);
+            func(name, taxPrice);
+        }
+
+        const showPrice = function showPrice(name, taxPrice) {
+            console.log(name + " の税込み価格は" + taxPrice + "円です。");
+        };
+
+        // トマトの税込み価格をコンソールに表⽰させる処理
+        addTax("トマト", 380, showPrice);
+
+        // ⽟ねぎの税込み価格をコンソールに表⽰させる処理
+        addTax("玉ねぎ", 240, showPrice);
+
+    </script>
+</body>
+
+</html>

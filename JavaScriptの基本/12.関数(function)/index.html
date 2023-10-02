@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>関数(function)</title>
+</head>
+
+<body>
+    <script>
+        //1. 関数宣⾔を⾏い、実⾏された時にアラート表⽰させるよう処理を作ってください。
+        function showAlert() {
+            console.log("showAlert");
+        };
+
+        showAlert();
+
+        //2. 関数式内で計算した結果を返し、それを外部から実⾏してコンソールで表⽰させてください。
+        let i = 5;
+        let j = 12;
+        var getText = function (x, y) {
+            return x + y
+        }
+        console.log(getText(i, j));
+
+        //3. スコープついて調べて⾃分なりの⾔葉でまとめてください。
+        //　　・参照可能な範囲のこと。
+        //　　　関数内で定義した変数、定数はその関数内でしか使用できない。
+        //　　　（言語によって違いがあるかもしれないが、）
+        //　　　関数などの外で定義した、ソース上のほぼ全ての場所で使用できるものをグローバル変数、
+        //　　　関数などの内で定義した、その関数内でのみ使用できるような局所的に使用可能な変数をローカル変数という。
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ループ処理</title>
+</head>
+
+<body>
+    <script>
+        //1. forを使ったループ処理を作ってください。
+        for (let i = 15; i > 10; i--) {
+            console.log(i);
+        };
+
+        //2. for inを使ったループ処理を作ってください。
+        let numbers = ['one', 'two', 'three'];
+        for (let number in numbers) {
+            console.log(numbers[number]);
+        };
+
+        //3. for ofを使ったループ処理を作ってください。
+        for (let number of numbers) {
+            console.log(number);
+        };
+
+    </script>
+</body>
+
+</html>

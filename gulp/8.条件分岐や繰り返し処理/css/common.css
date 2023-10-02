@@ -1,0 +1,62 @@
+.inner {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+.line {
+  display: block;
+  padding: 20px 30px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #00B900;
+  text-decoration: none;
+  text-align: center;
+}
+.line:after {
+  content: "line";
+}
+
+.instagram {
+  display: block;
+  padding: 20px 30px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #CF2E92;
+  text-decoration: none;
+  text-align: center;
+}
+.instagram:after {
+  content: "instagram";
+}
+
+.facebook {
+  display: block;
+  padding: 20px 30px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #71d0f2;
+  text-decoration: none;
+  text-align: center;
+}
+.facebook:after {
+  content: "facebook";
+}
+
+.twitter {
+  display: block;
+  padding: 20px 30px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #1DA1F2;
+  text-decoration: none;
+  text-align: center;
+}
+.twitter:after {
+  content: "twitter";
+}/*# sourceMappingURL=common.css.map */
